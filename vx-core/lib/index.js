@@ -1,3 +1,5 @@
+import 'module-alias/register';
+
 const { foldMap } = require('./utils');
 const { requiresNumber, requiresBoolean } = require('./utils/typeChecks');
 
