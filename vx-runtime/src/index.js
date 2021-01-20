@@ -1,3 +1,5 @@
+require('module-alias/register');
+
 const { parser, tokenizer } = require('../../vx-parser/src');
 
 const { evaluator } = require('./eval');

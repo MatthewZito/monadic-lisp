@@ -4,7 +4,7 @@ const {
   isNumber,
   isParenthesis,
   isQuote
-} = require('../../utils');
+} = require('@/utils');
 
 const tokenizer = input => {
   let cursor = 0;

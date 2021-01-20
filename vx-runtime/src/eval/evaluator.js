@@ -1,4 +1,4 @@
-const { environment } = require('../stdlib');
+const { environment } = require('@/stdlib');
 
 const { Sum, Product } = require('../../../vx-core/lib');
 

@@ -1,25 +1,22 @@
 {
-  "name": "@vx/parser",
+  "name": "@vx/runtime",
   "version": "1.0.0",
   "description": "",
   "main": "src/index.js",
   "scripts": {
-    "lint": "eslint . --ext .js --no-fix",
-    "lint:fix": "eslint . --ext .js --fix"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "Matthew Zito <matthewtzito@gmail.com> (goldmund)",
   "license": "MIT",
 
   "_moduleAliases": {
-    "@/constants": "src/constants/",
-    "@/core": "src/core/",
+    "@/eval": "src/eval/",
+    "@/stdlib": "src/stdlib/",
     "@/utils": "src/utils/"
   },
 
   "devDependencies": {
-    "babel-eslint": "10.1.0",
-    "eslint": "7.18.0",
     "module-alias": "2.2.2"
   }
 }

@@ -1,11 +1,11 @@
-const { TYPES } = require('../../constants');
+const { TYPES } = require('@/constants');
 
 const {
   isOpenParenthesis,
   isCloseParenthesis,
   peek,
   pop
-} = require('../../utils');
+} = require('@/utils');
 
 const encapsulate = tokens => {
   const token = pop(tokens);

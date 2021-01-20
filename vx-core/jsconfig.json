@@ -3,7 +3,7 @@
     "module": "commonJS",
     "target": "es2020",
     "allowSyntheticDefaultImports": true,
-    "baseUrl": "./src",
+    "baseUrl": "./lib",
     "paths": {
       "@/*": ["*"]
     }
