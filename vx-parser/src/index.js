@@ -1,8 +1,7 @@
-const { tokenizer } = require('../lexer');
-const { parser } = require('../parser');
-const { evaluator } = require('../environment');
-const { pipe } = require('../utils');
+const { tokenizer } = require('./core/lexer');
+const { parser } = require('./core/parser');
 
 module.exports = {
-  parseEval: pipe(tokenizer, parser, evaluator)
+  tokenizer,
+  parser
 };

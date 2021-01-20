@@ -1,4 +1,4 @@
-import 'module-alias/register';
+require('module-alias/register');
 
 const { foldMap } = require('./utils');
 const { requiresNumber, requiresBoolean } = require('./utils/typeChecks');
@@ -73,3 +73,14 @@ function Prop (prop) {
     return fromNullable(obj[prop]);
   };
 }
+
+
+module.exports = {
+  Sum,
+  Product,
+  Any,
+  All,
+  Just,
+  Nothing,
+  Maybe
+};

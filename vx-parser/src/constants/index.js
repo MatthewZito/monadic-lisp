@@ -1,5 +1,5 @@
-const { CHARACTERS } = require('./characters');
-const { EXPRESSIONS } = require('./regexpr');
+const { CHARACTERS } = require('./chars');
+const { EXPRESSIONS } = require('./regex');
 const { TYPES } = require('./types');
 
 module.exports = {

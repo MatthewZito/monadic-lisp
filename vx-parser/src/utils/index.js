@@ -1,5 +1,3 @@
-const { pipe } = require('./builders');
-
 const {
   isLetter,
   isWhitespace,
@@ -14,7 +12,6 @@ const {
 const { peek, pop } = require('./navigate');
 
 module.exports = {
-  pipe,
   isLetter,
   isWhitespace,
   isNumber,
