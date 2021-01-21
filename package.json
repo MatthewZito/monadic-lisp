@@ -1,0 +1,38 @@
+{
+  "name": "monadic-lisp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Matthew Zito <matthewtzito@gmail.com> (goldmund)",
+  "license": "MIT",
+  "workspaces": [
+    "packages/*"
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "lerna run precommit --since HEAD --exclude-dependents --concurrency 1 --stream",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional",
+      "@commitlint/config-lerna-scopes"
+    ]
+  },
+  "devDependencies": {
+    "@commitlint/cli": "11.0.0",
+    "@commitlint/config-conventional": "11.0.0",
+    "@commitlint/config-lerna-scopes": "11.0.0",
+    "babel-eslint": "10.1.0",
+    "commitlint": "11.0.0",
+    "eslint": "7.18.0",
+    "husky": "4.3.8",
+    "lerna": "^3.22.1",
+    "lerna-changelog": "1.0.1"
+  }
+}

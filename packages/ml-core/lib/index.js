@@ -66,18 +66,6 @@ const Sum = x =>
 Sum.empty = () => Sum(0);
 Sum.fold = foldMap(Sum);
 
-function fromNullable (val) {
-  if (val == null) return Maybe.Nothing();
-  return Maybe.of(val);
-}
-
-function Prop (prop) {
-  return function (obj) {
-    return fromNullable(obj[prop]);
-  };
-}
-
-
 module.exports = {
   Sum,
   Product,

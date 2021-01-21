@@ -1,7 +1,7 @@
 // const all = fn => (...list) => list.reduce(fn);
 
 
-const { Sum, Product } = require('../../../vx-core/lib');
+const { Sum, Product } = require('../../../ml-core/lib');
 
 const all = fn => (...list) => {
   if (list.length === 2) {
@@ -17,7 +17,7 @@ const multiply = all(Product);
 const subtract = all((x, y) => x - y);
 const divide = all((x, y) => x / y);
 const modulo = all((x, y) => x % y);
-const log = console.log;
+const log = console.log; // eslint-disable-line no-console
 
 const environment = {
   add,

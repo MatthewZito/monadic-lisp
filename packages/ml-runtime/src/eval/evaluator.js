@@ -1,13 +1,13 @@
 const { environment } = require('@/stdlib');
 
-const last = collection => collection[collection.length];
+const last = collection => collection[collection.length]; // eslint-disable-line no-unused-vars
 
 const apply = node => {
-  const fn = environment[node.name],
+  const fn = environment[node.name];
   const args = node.arguments.map(evaluator);
 
   if (typeof fn !== 'function') {
-    throw new TypeError(`${node.name} is not a function`); // eslint-disable-line no-use-before-define
+    throw new TypeError(`${node.name} is not a function`);
   }
   
   return fn(...args);
