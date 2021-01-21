@@ -1,10 +1,8 @@
 {
   "name": "@monadic-lisp/core",
   "version": "1.0.0",
-  "description": "",
   "main": "lib/index.js",
   "private": true,
-  "keywords": [],
   "author": "Matthew Zito <matthewtzito@gmail.com> (goldmund)",
   "license": "MIT",
   "scripts": {
