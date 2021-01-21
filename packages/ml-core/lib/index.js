@@ -1,10 +1,8 @@
-require('module-alias/register');
-
 const { 
   foldMap, 
   requiresNumber, 
   requiresBoolean
-} = require('@/utils');
+} = require('./utils');
 
 /* Core */
 const Just = (v) => ({ 

@@ -4,5 +4,8 @@
   ],
   "npmClient": "yarn",
   "version": "0.0.2",
-  "useWorkspaces": true
+  "useWorkspaces": true,
+  "nohoist": [
+    "**/module-alias"
+  ]
 }

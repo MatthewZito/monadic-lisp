@@ -21,7 +21,10 @@
   "devDependencies": {
     "babel-eslint": "10.1.0",
     "eslint": "7.18.0",
-    "lint-staged": "10.5.3",
+    "lint-staged": "10.5.3"
+  },
+  "dependencies": {
+    "@monadic-lisp/parser": "^0.0.2",
     "module-alias": "2.2.2"
   }
 }

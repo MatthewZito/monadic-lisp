@@ -1,4 +1,4 @@
-const { CHARACTERS, EXPRESSIONS } = require('@/constants');
+const { CHARACTERS, EXPRESSIONS } = require('../constants');
 
 const isLetter = char => EXPRESSIONS.LETTER.test(char);
 

@@ -1,7 +1,6 @@
 // const all = fn => (...list) => list.reduce(fn);
 
-
-const { Sum, Product } = require('../../../ml-core/lib');
+const { Sum, Product } = require('@monadic-lisp/core');
 
 const all = fn => (...list) => {
   if (list.length === 2) {

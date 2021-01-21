@@ -1,6 +1,4 @@
-require('module-alias/register');
-
-const { parser, tokenizer } = require('../../ml-parser/src');
+const { parser, tokenizer } = require('@monadic-lisp/parser');
 
 const { evaluator } = require('./eval');
 const { pipe } = require('./utils');
