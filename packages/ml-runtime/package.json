@@ -1,6 +1,6 @@
 {
   "name": "@monadic-lisp/runtime",
-  "version": "1.0.0",
+  "version": "0.0.2",
   "main": "src/index.js",
   "private": true,
   "author": "Matthew Zito <matthewtzito@gmail.com> (goldmund)",
