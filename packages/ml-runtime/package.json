@@ -8,7 +8,9 @@
   "scripts": {
     "lint": "eslint . --ext .js --no-fix",
     "lint:fix": "eslint . --ext .js --fix",
-    "precommit": "lint-staged"
+    "precommit": "lint-staged",
+    "test": "jest",
+    "test:mon": "jest --watch _tests_.*"
   },
   "lint-staged": {
     "src/**/*.js": [
@@ -20,9 +22,28 @@
     "@/stdlib": "src/stdlib/",
     "@/utils": "src/utils/"
   },
+  "jest": {
+    "moduleNameMapper": {
+      "^@/(.*)": "<rootDir>/src/$1"
+    },
+    "coverageDirectory": "./coverage",
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "src/**/*.js"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 10,
+        "functions": 10,
+        "lines": 10,
+        "statements": 10
+      }
+    }
+  },
   "devDependencies": {
     "babel-eslint": "10.1.0",
     "eslint": "7.18.0",
+    "jest": "26.6.3",
     "lint-staged": "10.5.3"
   },
   "dependencies": {

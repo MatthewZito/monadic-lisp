@@ -9,7 +9,7 @@ const {
 
 const encapsulate = tokens => {
   const token = pop(tokens);
-
+  
   if (isOpenParenthesis(token.value)) {
     const expression = [];
 

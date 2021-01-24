@@ -22,7 +22,8 @@
     "space-before-function-paren": ["error"]
   },
   "ignorePatterns": [
-    "repl.js"
+    "repl.js",
+    "**/*__tests__"
   ],
   "reportUnusedDisableDirectives": true
 }

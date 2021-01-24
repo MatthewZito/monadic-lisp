@@ -25,6 +25,7 @@ const tokenizer = input => {
     }
 
     if (isWhitespace(char)) {
+
       cursor++;
 
       continue;
@@ -73,7 +74,7 @@ const tokenizer = input => {
       });
 
       cursor++;
-      
+
       continue;
     }
   }

@@ -8,7 +8,8 @@ const {
 const Just = (v) => ({ 
   map: (fn) => Just(fn(v)), 
   chain: (fn) => fn(v), 
-  ap: (other) => other.map(v)
+  ap: (other) => other.map(v),
+  extract: () => v
 });
 
 const Nothing = () => ({
@@ -23,7 +24,13 @@ const Maybe = {
   of: Just
 };
 
-const Product = (x) => 
+const Self = x => ({
+  x,
+  concat: fn => 
+    Self(fn(x))
+});
+
+const Product = x => 
   requiresNumber(x) && ({
     x,
     concat: other => 
@@ -64,11 +71,30 @@ const Sum = x =>
 Sum.empty = () => Sum(0);
 Sum.fold = foldMap(Sum);
 
+const Difference = x => 
+  requiresNumber(x) && ({
+    x,
+    concat: other => 
+        Difference(x - other.x)
+  });
+
+Difference.empty = () => Difference(0);
+Difference.fold = foldMap(Difference);
+
+const Max = ord => ({
+  ord,
+  concat: other =>
+    Max(Math.max(other, ord))
+});
+
 module.exports = {
   Sum,
   Product,
   Any,
   All,
+  Self,
+  Difference,
+  Max,
   Just,
   Nothing,
   Maybe

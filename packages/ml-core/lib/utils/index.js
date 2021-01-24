@@ -1,4 +1,8 @@
-const { requiresNumber, requiresBoolean } = require('./typeChecks');
+const { 
+  requiresNumber, 
+  requiresBoolean, 
+  isNumber
+} = require('./typeChecks');
 
 /* Utils */
 const reducer = (acc, _) => acc.concat(_);
@@ -10,5 +14,6 @@ const is = type => _ => Object(_) instanceof type; // eslint-disable-line no-unu
 module.exports = {
   foldMap,
   requiresNumber,
-  requiresBoolean
+  requiresBoolean,
+  isNumber
 };
